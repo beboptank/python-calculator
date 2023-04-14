@@ -16,3 +16,11 @@ def multiply(num1, num2):
 def divide(num1, num2):
     """Divides num1 by num2"""
     return num1 / num2
+
+
+calculator_operations = {
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    "/": divide
+}
