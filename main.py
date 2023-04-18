@@ -21,7 +21,7 @@ result = calc_functions.calculator_operations[operation](first_number, second_nu
 
 print(f"{first_number} {operation} {second_number} = {result}")
 
-continue_calculator = input(f"Continue using calculator with current result ({result})? Type y or n: \n")
+continue_calculator = input(f"Continue using calculator with current result ({result})? Type 'y' to continue or 'n' to exit: \n")
 
 while continue_calculator == 'y':
     new_first_number = result
