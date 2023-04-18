@@ -27,7 +27,7 @@ calculator_operations = {
 
 
 def calculator():
-    first_number = int(input("What is your first number?\n"))
+    first_number = float(input("What is your first number?\n"))
 
     print("List of operations you can perform:\n")
     for operation in calculator_operations:
@@ -35,7 +35,7 @@ def calculator():
 
     operation = input("What operation would you like to perform?\n")
 
-    second_number = int(input("What is your second number?\n"))
+    second_number = float(input("What is your second number?\n"))
 
     result = calculator_operations[operation](first_number, second_number)
 
@@ -50,7 +50,7 @@ def calculator():
         for operation in calculator_operations:
             print(operation)
         operation = input("What operation would you like to perform?\n")
-        new_second_number = int(input("What is your second number?\n"))
+        new_second_number = float(input("What is your second number?\n"))
         result = calculator_operations[operation](new_first_number, new_second_number)
         print(f"{new_first_number} {operation} {new_second_number} = {result}")
         continue_calculator = input(
